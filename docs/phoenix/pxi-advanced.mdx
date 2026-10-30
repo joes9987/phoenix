@@ -51,6 +51,8 @@ Requires Phoenix **20.0.0 or newer** and a configured model provider. Lines begi
 
 PXI runs on your model provider and your API key. Set credentials for Anthropic, OpenAI, Google, or AWS Bedrock through environment variables or Phoenix secrets, or add a custom provider under **Settings → AI Providers**.
 
+In the web UI, pick a model from the model picker in the chat input. Before you type, it lists your current, recent, and recommended models. Typing searches the models of every configured provider. To use a model that isn't listed, type its name, choose the **Use "your-model-name" as a custom model** row, and then pick the provider. The **Model** setting under **Settings → Assistant → General** sets the default model for new chats.
+
 ### Permissions and approval
 
 Agent assistance is opt-in.

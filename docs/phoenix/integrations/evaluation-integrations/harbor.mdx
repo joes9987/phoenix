@@ -51,7 +51,8 @@ Use the plugin when Harbor runs your benchmark and you want to:
 Omit the plugin when you want a Harbor-only job. Selecting the plugin makes Phoenix recording part of the job contract. A setup or result-write failure stops the job instead of continuing with unrecorded trials.
 
 <Info>
-The integration requires Python 3.12 or newer, Harbor 0.21.0 or newer, and Phoenix server 15.0 or newer.
+The integration requires Python 3.12 through 3.14, Harbor 0.21.0 or newer, and Phoenix server 15.0 or newer.
+On Python 3.15 the `harbor` extra is skipped because a Harbor dependency (`fastuuid`) doesn't yet ship 3.15 wheels.
 </Info>
 
 ## Install and run
